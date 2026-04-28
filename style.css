@@ -1,1 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: "Raleway", sans-serif;
+    background: #ffffff;
+    color: #111111;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background:#ffffff;
+}
+
+
+.header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5d7d7;
+    padding: 0 60px;
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    color: #a63d45;
+    font-size: 20px;
+}
+
+.logo-text {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    gap: 42px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 13px;
+}
+
+.nav a.active {
+    font-weight: 700;
+}
+
+.login-btn {
+    background: #9C3B40;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.15s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn:hover {
+    background: #872f34;
+    transform: scale(1.05);
+}
+
+.login-btn:active {
+    background: #6f2428;
+    transform: scale(0.95) translateY(1px);
+}
+
+
+.hero {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.left-block {
+    width: 545px;
+    padding-left: 97px;
+    padding-top: 98px;
+}
+
+.image-box {
+    width: 360px;
+    height: 260px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-block h2 {
+    margin-top: 24px;
+    font-size: 26px;
+}
+
+.right-block {
+    width: 511px;
+    padding-top: 123px;
+    margin-left: 69px;
+}
+
+.right-block h1 {
+    width: 511px;
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    line-height: 1.15;
+    font-weight: 600;
+    color: #111111
+}
+
+.highlight {
+    background: #E8C4C6;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.right-block p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.donor-btn {
+    width: 400px;
+    height: 88px;
+    border: none;
+    border-radius: 50px;
+    background: #9c3b40;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.donor-btn:hover {
+    background: #872f34;
+    transform: scale(1.03);
+}
+
+.donor-btn:active {
+    background: #6f2428;
+    transform: scale(0.96) translateY(2px);
+}
+
+.more-btn {
+    display: flex;
+    margin-top: 36px;
+    width: 293px;
+    height: 49px;
+    border: 3px solid #E8C4C6;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.more-btn:hover {
+    background: #f9f9f9;
+    transform: scale(1.02);
+}
+
+.more-btn:active {
+    transform: scale(0.95) translateY(2px);
+    border-color: #9C3B40;
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 78px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.feature {
+    width: 250px;
+}
+
+.feature h3 {
+    display: inline-block;
+    background: #d8cec3;
+    padding: 2px 6px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.feature p {
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 66px 84px 0;
+    position: relative;
+    z-index: 2;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 34px;
+}
+
+.footer-links a {
+    color: #111;
+    text-decoration: underline;
+}
+
+
+.page::before {
+    content: "";
+    position: absolute;
+    width: 1225px;
+    height: 1160px;
+    left: -369px;
+    top: -554px;
+    background: #FFEEEF;
+    border-radius: 50%;
+    z-index: 0;
+
+}
+
+.page::after {
+    content: "";
+    position: absolute;
+    width: 593px;
+    height: 593px;
+    left: 901px;
+    top: 365px;
+    background: #e9bfc3;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.header,
+.hero,
+.features,
+.footer {
+    position: relative;
+    z-index: 2;
+}
