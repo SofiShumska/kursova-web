@@ -443,3 +443,135 @@ width: 1225px;
     margin-top: -250px;
     margin-left: 70px;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    color: #a63d45;
+    font-size: 20px;
+}
+
+
+.auth-logo {
+    position: absolute;
+
+    top: 40px;     /* 🔥 підганяй 30–60 */
+    left: 137px;   /* як у Figma */
+
+    z-index: 5;
+}
+
+
+.auth-section {
+    position: relative; /* 🔥 ВАЖЛИВО */
+
+    min-height: 100vh;
+
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 🔥 було center */
+
+    padding-top: 140px; /* 🔥 додаємо простір зверху */
+}
+
+
+/* ФОН */
+.auth-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+/* КАРТИНКА ФОНУ */
+.auth-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 1; /* 🔥 зробив 0.2 щоб ти точно побачив */
+
+    z-index: -1; /* 🔥 ВАЖЛИВО */
+}
+
+/* Щоб контент був зверху */
+.auth-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+/* Карточка */
+.auth-box {
+    width: 420px;
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid #c94a4a;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.auth-input:focus {
+    border-color: #c94a4a;
+}
+
+.auth-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.auth-btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.auth-link {
+    font-size: 14px;
+    color: #c94a4a;
+    text-decoration: none;
+}
+
+.auth-link:hover {
+    text-decoration: underline;
+}
