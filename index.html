@@ -26,10 +26,10 @@
                 <a href="#">Досягнення</a>
             </nav>
 
-            <button class="login-btn">Увійти</button>
+            <a href="#login" class="login-btn">Увійти</a>
         </header>
 
-        <main class="hero">
+        <section class="hero" id="home">
 
             <section class="left-block">
                 <div class="image-box">
@@ -49,12 +49,12 @@
                 <p>Просто, швидко, безпечно.</p>
 
                 <div class="buttons">
-                    <button class="donor-btn">Стати донором</button>
-                    <button class="more-btn">Дізнатися більше</button>
+                    <a href="#login" class="donor-btn">Стати донором</a>
+                    <a href="#about" class="more-btn">Дізнатися більше</a>
                 </div>
             </section>
 
-        </main>
+        </section>
 
         <section class="features">
             <div class="feature">
@@ -82,7 +82,7 @@
             </div>
         </footer>
         
-        <section class="about">
+        <section class="about" id="about">
                 <div class="about-container">
 
         <div class="about-left">
@@ -138,32 +138,29 @@
     </div>
         </section>
 
-<section class="auth-section auth-bg">
+        <section class="login-section" id="login">
+            <div class="login-logo">
+    <span class="logo-drop">🩸</span>
+    <span class="logo-text">LifePulse</span>
+</div>
 
-            <div class="logo">
-                <span class="logo-text">LifePulse</span>
+    <div class="login-wrapper">
+
+        <h1>Ласкаво просимо!</h1>
+
+        <p class="login-sub">
+            Увійди або створи новий акаунт
+        </p>
+
+        <div class="login-form">
+
+            <input type="text" placeholder="E-mail або телефон">
+            <input type="password" placeholder="Пароль">
+
+            <div class="login-actions">
+                <button class="register-btn">Зареєструватись</button>
+                <a href="#" class="forgot">Забули пароль?</a>
             </div>
-
-    <div class="auth-wrapper">
-
-        
-        <div class="auth-box">
-
-            <h1 class="auth-title">Ласкаво просимо!</h1>
-            <p class="auth-subtitle">Увійди або створи новий акаунт</p>
-
-            <form class="auth-form">
-
-                <input class="auth-input" type="text" placeholder="E-mail або телефон">
-                
-                <input class="auth-input" type="password" placeholder="Пароль">
-
-                <div class="auth-controls">
-                    <button class="button auth-btn">Зареєструватись</button>
-                    <a href="#" class="auth-link">Забули пароль?</a>
-                </div>
-
-            </form>
 
         </div>
 
@@ -174,5 +171,4 @@
     </div>
 
 </body>
-</html>
 </html>
