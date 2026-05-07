@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="page">
@@ -21,9 +22,9 @@
 
             <nav class="nav">
                 <a href="#" class="active">Головна</a>
-                <a href="about.html">Про нас</a>
-                <a href="#">Цифровий паспорт QR</a>
-                <a href="#">Досягнення</a>
+                <a href="#about">Про нас</a>
+                <a href="#qr">Цифровий паспорт QR</a>
+                <a href="#achievements">Досягнення</a>
             </nav>
 
             <a href="#login" class="login-btn">Увійти</a>
@@ -119,7 +120,7 @@
             </div>
         </div>
 
-            <div class="about-item">
+        <div class="about-item">
                 <img class="about-icon" src="images/icon3.png" alt="Цінності">
                 <div class="about-item-text">
                 <h3>Цінності</h3>
@@ -162,6 +163,315 @@
                 <a href="#" class="forgot">Забули пароль?</a>
             </div>
 
+        </div>
+
+    </div>
+
+</section>
+
+<section class="profile-section" id="profile">
+    <div class="bg-pink-oval"></div>
+
+    <div class="profile-label">Профіль</div>
+
+    <div class="profile-card">
+
+        <div class="profile-top">
+            <img class="profile-avatar" src="images/profile-avatar.png" alt="Фото профілю">
+
+            <div class="profile-name-block">
+                <span class="profile-name">Анна Іваненко</span>
+                <p class="profile-id">ID:458712</p>
+            </div>
+
+            <div class="profile-status">
+                <span class="status-drop">🩸</span>
+                <span>Донор</span>
+            </div>
+        </div>
+
+        <div class="profile-bottom">
+            <div class="info-line">
+                <span>Група крові</span>
+                <span class="blood-type">A (II)Rh+</span>
+            </div>
+
+            <div class="info-line">
+                <span>Дата народження</span>
+                <span>15.04.1998</span>
+            </div>
+
+            <div class="info-line">
+                <span>Остання донація</span>
+                <span>15.04.2024</span>
+            </div>
+
+            <div class="info-line">
+                <span>Кількість донацій</span>
+                <span>4</span>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 class="quick-title">ШВИДКІ ДІЇ</h2>
+
+    <div class="quick-actions">
+
+        <div class="quick-item">
+            <a href="#emergency" class="quick-item">
+            <img src="images/action-help.png" alt="">
+            <p>ЕКСТРЕНА ДОПОМОГА</p>
+            </a>
+        </div>
+
+        <div class="quick-item">
+            <a href="#achievements" class="quick-item">
+            <img src="images/action-achievements.png" alt="">
+            <p>ДОСЯГНЕННЯ</p>
+            </a>
+        </div>
+
+        <div class="quick-item">
+            <a href="#map" class="quick-item">
+            <img src="images/action-map.png" alt="">
+            <p>КАРТА ПОТРЕБ</p>
+            </a>
+        </div>
+
+        <div class="quick-item">
+            <a href="#qr">
+            <img src="images/action-qr.png" alt="QR-код"></a>
+            <p>МІЙ QR-КОД</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="qr-section" id="qr">
+    <div class="qr-bg-oval-right"></div>
+    <div class="qr-header">
+        <a href="#profile" class="back-arrow">➜</a>
+
+        <div class="qr-logo">
+            <span class="logo-icon">🩸</span>
+            <span class="logo-text">LifePulse</span>
+        </div>
+    </div>
+
+    <h2 class="qr-title">ЦИФРОВИЙ ПАСПОРТ ДОНОРА</h2>
+
+    <p class="qr-subtitle">
+        ПОКАЖИ ЦЕЙ QR-КОД У ЦЕНТРІ ЗДАЧІ КРОВІ
+    </p>
+
+    <div class="qr-image-box">
+        <img src="images/qr-code.png" alt="QR-код донора">
+    </div>
+
+    <div class="qr-warning">
+        <span>ⓘ</span>
+        <p>
+            ЦЕЙ КОД МІСТИТЬ ВАШУ ОСОБИСТУ ІНФОРМАЦІЮ<br>
+            НЕ ПЕРЕДАВАЙТЕ ЙОГО СТОРОННІМ ОСОБАМ
+        </p>
+    </div>
+
+    <button class="download-btn">
+        ЗАВАНТАЖИТИ PDF
+        <img src="images/download.png" alt="">
+    </button>
+
+    <button class="share-btn">
+        ПОДІЛИТИСЯ 
+        <img src="images/share.png" alt="">
+    </button>
+
+</section>
+
+<section class="emergency-section" id="emergency">
+    <div class="emergency-bg-pink"></div>
+    <div class="emergency-header">
+        <a href="#profile" class="emergency-back">➜</a>
+
+        <div class="emergency-logo">
+            <span class="logo-icon">🩸</span>
+            <span class="logo-text">LifePulse</span>
+        </div>
+    </div>
+
+    <h2 class="emergency-title">ЕКСТРЕНИЙ РЕЖИМ</h2>
+
+    <p class="emergency-subtitle">
+        ПОКАЖІТЬ ЦЕЙ QR-КОД УРАЗІ ПОТРЕБИ
+    </p>
+
+    <div class="emergency-content">
+        <div class="emergency-qr">
+        <img src="images/qr-code.png" alt="QR-код">
+        </div>
+        <div class="emergency-warning">
+            <span>⚠️</span>
+            <p>Важлива інформація для медиків у надзвичайних ситуаціях.</p>
+        </div>
+
+        <div class="emergency-info">
+            <h3>У цьому режимі доступно:</h3>
+
+            <ul>
+                <li>Група крові та резус</li>
+                <li>Алергії та протипоказання</li>
+                <li>Контакти близьких</li>
+            </ul>
+        </div>
+
+        <a href="#profile" class="edit-btn">
+        <span class="edit-icon">✎</span>
+        Редагувати дані
+        </a>
+
+    </div>
+
+</section>
+
+<section class="map-section" id="map">
+
+    <div class="map-bg-left"></div>
+    <div class="map-bg-right-top"></div>
+    <div class="map-bg-right-bottom"></div>
+
+    <div class="map-header">
+
+        <a href="#profile" class="map-back">➜</a>
+
+        <div class="map-logo">
+            <span class="logo-icon">🩸</span>
+            <span class="logo-text">LifePulse</span>
+        </div>
+
+    </div>
+
+    <h2 class="map-title">Точки для збору крові</h2>
+
+    <p class="map-subtitle">
+        Натисніть на любу точку, щоб дізнатись більше
+    </p>
+
+    <div class="map-image-box">
+        <img src="images/map.png" alt="Карта донорства">
+    </div>
+
+</section>
+
+<section class="achievements-section" id="achievements">
+
+    <!-- ФОНИ -->
+    <div class="ach-bg-left"></div>
+    <div class="ach-bg-right-top"></div>
+    <div class="ach-bg-right-bottom"></div>
+
+    <!-- HEADER -->
+    <div class="ach-header">
+
+        <a href="#profile" class="ach-back">➜</a>
+
+        <div class="ach-logo">
+            <span class="logo-icon">🩸</span>
+            <span class="logo-text">LifePulse</span>
+        </div>
+
+    </div>
+
+    <!-- LEVEL -->
+    <div class="level-block">
+
+        <img class="level-icon" src="images/level4.png" alt="Рівень 4">
+
+        <div class="level-info">
+
+            <h2>Рівень 4</h2>
+
+            <p>Досвід: 1000/2000</p>
+
+            <div class="level-bar">
+                <div class="level-progress"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- СТАТИСТИКА -->
+    <h3 class="stats-title">Моя статистика</h3>
+
+    <div class="stats-grid">
+
+        <div class="stat-item">
+
+            <div class="stat-top">
+                <img src="images/heart.png" alt="">
+                <span>4</span>
+            </div>
+
+            <p>Донацій</p>
+
+        </div>
+
+        <div class="stats-line"></div>
+
+        <div class="stat-item">
+
+            <div class="stat-top">
+                <img src="images/blood.png" alt="">
+                <span>2 л</span>
+            </div>
+
+            <p>Крові здано</p>
+
+        </div>
+
+        <div class="stats-line"></div>
+
+        <div class="stat-item">
+
+            <div class="stat-top">
+                <img src="images/person.png" alt="">
+                <span>3</span>
+            </div>
+
+            <p>Людей врятовано</p>
+
+        </div>
+
+    </div>
+
+    <div class="divider divider-bottom"></div>
+
+    <h3 class="badges-title">Мої значки</h3>
+
+    <div class="badges-grid">
+
+        <div class="badge-item">
+            <img src="images/badge1.png" alt="">
+            <p>Перший крок</p>
+        </div>
+
+        <div class="badge-item">
+            <img src="images/badge2.png" alt="">
+            <p>Регулярний донор</p>
+        </div>
+
+        <div class="badge-item">
+            <img src="images/badge3.png" alt="">
+            <p>Постійний донор</p>
+        </div>
+
+        <div class="badge-item">
+            <img src="images/badge4.png" alt="">
+            <p>Герой</p>
         </div>
 
     </div>
